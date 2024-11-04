@@ -7,7 +7,7 @@ import asyncio
 API_ID = 'your_api_id'
 API_HASH = 'your_api_hash'
 BOT_TOKEN = 'your_bot_token'
-COOKIE_FILE = 'path_to_your_netscape_cookie_file.txt'
+COOKIE_FILE = 'cookies.txt'
 
 app = Client("music_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
