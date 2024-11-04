@@ -4,9 +4,9 @@ from pyrogram.types import Message
 from yt_dlp import YoutubeDL
 import asyncio
 
-API_ID = 'your_api_id'
-API_HASH = 'your_api_hash'
-BOT_TOKEN = 'your_bot_token'
+API_ID = '22419004'
+API_HASH = '34982b52c4a83c2af3ce8f4fe12fe4e1'
+BOT_TOKEN = '7845997152:AAFIoE9hO-nLQm2r1pMtWemmU8wzRNrfzVg'
 COOKIE_FILE = 'cookies.txt'
 
 app = Client("music_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
