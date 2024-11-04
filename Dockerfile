@@ -1,18 +1,18 @@
-# Base image with Python
-FROM python:3.9-slim
+# Use the latest official Python image
+FROM python:3.11-slim
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy requirements.txt and install dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the bot script into the container
+# Copy the bot code into the container
 COPY . .
 
-# Expose the port if necessary (Pyrogram doesn’t require specific ports, but Flask does if you expand)
+# Install necessary packages
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+# Expose the necessary port (if needed)
 EXPOSE 5000
 
-# Run the bot script
+# Run the bot
 CMD ["python", "main.py"]
